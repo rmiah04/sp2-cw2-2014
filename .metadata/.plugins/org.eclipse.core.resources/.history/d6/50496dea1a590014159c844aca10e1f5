@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+
+/**
+ * @author HP
+ *
+ */
+public class FractionCalculator extends Fraction{
+
+
+}

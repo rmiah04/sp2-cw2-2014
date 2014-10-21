@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author HP
+ *
+ */
+public class FractionCalculatorTest extends FractionTest{
+
+	@Test
+	public void test() {
+        assert ((new FractionCalculator(3, 1)).equals(new FractionCalculator(1, 2).multiply(new FractionCalculator(3, 5))));
+
+	}
+
+}
