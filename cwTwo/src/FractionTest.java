@@ -15,6 +15,9 @@ public class FractionTest {
         assert (new Fraction(1, 2).equals(new Fraction(3, 6)));
         assert (new Fraction(-1, 2).equals(new Fraction(1, -2)));
         assert (new Fraction(-1, -2).equals(new Fraction(1, 2)));
+        //
+        System.out.println(new FractionCalculator(3, 10));
+
 
         // extend with extra tests
     }

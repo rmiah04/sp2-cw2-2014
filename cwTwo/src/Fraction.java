@@ -7,7 +7,8 @@ public class Fraction {
 
     public Fraction(int num, int denom) {
         if (denom == 0) {
-            System.out.println("Invalid fraction with denominator 0"); // this should use exceptions
+            System.out.println("Invalid fraction with denominator 0"); 
+	    // this should use exceptions
             return;
         }
         int gcd = myGcd(num, denom);
@@ -56,10 +57,10 @@ public class Fraction {
         return result;
     }
 
-    public Fraction multiply(Fraction frac) {
+    public Fraction multiply(Fraction other) {
 
-        int num = this.getNumerator() * frac.getNumerator();
-        int denom = this.getDenominator() * frac.getDenominator();
+        int num = this.getNumerator() * other.getNumerator();
+        int denom = this.getDenominator() * other.getDenominator();
         return new Fraction(num, denom);
     }
 
