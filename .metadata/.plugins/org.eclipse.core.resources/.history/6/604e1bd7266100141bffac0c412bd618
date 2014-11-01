@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author Ronu
+ *
+ */
+
+public class FractionCalculatorTest{
+	@Test
+	public void inputtest(){
+	String myString = "i o u";
+	
+	String  splitString[] = myString.split("\\s+");
+	
+	for (String element : splitString) {
+        System.out.println(element);
+        
+    }
+	}
+}

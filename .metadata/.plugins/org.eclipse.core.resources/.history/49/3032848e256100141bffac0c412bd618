@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author Ronu
+ *
+ */
+public class FractionCalculatorTest{
+
+	String myString = "";
+	String [] splitString = myString.split("\\s+");
+	System.out.println(java.util.Arrays.toString(splitString));
+	
+}

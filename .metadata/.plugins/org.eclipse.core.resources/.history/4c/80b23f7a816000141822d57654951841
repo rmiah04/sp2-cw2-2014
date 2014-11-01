@@ -1,0 +1,14 @@
+
+public class FractionCalculator extends Fraction{
+
+	public FractionCalculator(int num, int denom) {
+		super(num, denom);
+		// TODO Auto-generated constructor stub
+	}
+	public FractionCalculator add(FractionCalculator frac) {
+
+        int num = this.getNumerator() * frac.getDenominator() + frac.getNumerator() * this.getNumerator();
+        int denom = this.getDenominator() * frac.getDenominator();
+        return new FractionCalculator(num, denom);
+    }
+}

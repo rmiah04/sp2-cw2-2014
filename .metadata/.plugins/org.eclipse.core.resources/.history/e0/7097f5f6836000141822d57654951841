@@ -1,0 +1,63 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author Ronu
+ *
+ */
+public class FractionCalculatorTest{
+
+	@Test
+	public void multiply() {
+        assertEquals((new Fraction(3, 10)),(new Fraction(1, 2).multiply(new Fraction(3, 5))));
+        //test output pass
+
+	}
+	@Test
+	public void multiplyTwo() {
+        assertEquals((new Fraction(3, 11)),(new Fraction(1, 2).multiply(new Fraction(3, 5))));
+        //test output for failure
+
+	}
+
+	//zero value test
+	@Test 
+	public void zero (){
+		new FractionCalculator(1, 0);
+	}
+	@Test
+	public void equals1(){
+		assertEquals(new FractionCalculator(1, 2),(new FractionCalculator(1, 2)));
+	}
+	@Test
+	public void equals2(){
+		assertEquals(new FractionCalculator(1, 2),(new FractionCalculator(3, 6)));
+	}
+	@Test
+	public void equals3(){
+		assertEquals(new FractionCalculator(-1, 2),(new FractionCalculator(1, -2)));
+	}
+	// test for failure
+	@Test
+	public void equals4(){
+		assertEquals(new FractionCalculator(-1, -2),(new FractionCalculator(1, 4)));
+	}
+	//addition test
+	@Test
+	public void add(){
+		assertEquals((new FractionCalculator(3, 4)),(new FractionCalculator(2, 4).add(new FractionCalculator(1, 4))));
+
+	}
+	//subtraction test
+	@Test
+	public void sub(){
+		assertEquals((new FractionCalculator(1, 4)),(new FractionCalculator(2, 4).subtract(new FractionCalculator(1, 4))));
+		System.out.println(new FractionCalculator(3, 4));
+	}
+	
+}
