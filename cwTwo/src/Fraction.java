@@ -18,7 +18,13 @@ public class Fraction {
 
     @Override
     public String toString() {
-        return "" + getNumerator() + '/' + getDenominator();
+    	if (getDenominator() == 1) {
+    		int num = getNumerator();
+    		return (Integer.toString(num));
+    		} 
+    	else {
+    		return "" + getNumerator() + '/' + getDenominator();
+    		}
     }
 
     public int getNumerator() {
@@ -93,4 +99,16 @@ public class Fraction {
         int denom = this.getDenominator() * frac.getNumerator();
         return new Fraction(num, denom);
     }
+	//negation
+	public Fraction absValue() {
+		int num = this.getNumerator();
+		int denom = this.getDenominator();
+		if (num < 0) {
+		num = num *-1;
+		}
+		if (denom < 0) {
+		denom = denom * -1;
+		}
+		return new Fraction(num, denom);
+		}
 }

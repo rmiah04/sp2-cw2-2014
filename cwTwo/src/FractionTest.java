@@ -73,5 +73,12 @@ public class FractionTest {
 			assertEquals((new Fraction(8, 3)),(new Fraction(2, 3).devide(new Fraction(1, 4))));
 			System.out.println(new Fraction(3, 4));
 		}
+		//add with negative
+		@Test
+		public void nAdd(){
+			assertEquals((new Fraction(5, 12)),(new Fraction(3, 4).add(new Fraction(1, -3))));
+
+		}
+		
 
 }
